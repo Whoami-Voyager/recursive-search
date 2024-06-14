@@ -1,5 +1,9 @@
 function recursiveSearch(arr, target) {
-  // type your code here
+  if (arr.includes(target)){
+    return true
+  } else {
+    return false
+  }
 }
 
 if (require.main === module) {
@@ -17,3 +21,9 @@ module.exports = recursiveSearch;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+
+// the function takes in the array, iterates over the array
+// if the number is in the array, returns true
+// once the loop is done and hasn't return true, returns false
+
+// what I found out was that actually .includes is a better solution even though my iterarion was working correctly
